@@ -206,162 +206,47 @@
             <div class="sidebar-title">
                 Filters
             </div>
-            <div class="sidebar-content">
-                <ul>
-                    <!-- 1st Group Li -->
-                    <li class="selected">
-                        <a href="#" title="Test Title" class="">
-                            Format
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul style="display: block;">
+            <aside class="cc_sidebar">
+                <div class="filter-section">
+                    <div class="filter-title">Format <img src="images/arrow-up.svg" width="" height="" alt=""></div>
+                    <div class="filter-content" style="display: block;">
+                        <label for="filters-portrait"><input id="filters-portrait" type="checkbox" value="Portrait"> Portrait (205)</label>
+                        <label for="filters-square"><input id="filters-square" type="checkbox" value="Square"> Square (173)</label>
+                        <label for="filters-landscape"><input id="filters-landscape" type="checkbox" value="landscape"> Landscape (205)</label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">Size <img src="images/arrow-up.svg" width="" height="" alt=""></div>
+                    <div class="filter-content">
+                        <label for="filters-size1"><input id="filters-size1" type="checkbox" value="size1"> 3" x 5"</label>
+                        <label for="filters-size2"><input id="filters-size2" type="checkbox" value="size2"> 3.5" x 5"</label>
+                        <label for="filters-size3"><input id="filters-size3" type="checkbox" value="size3"> 4" x 6"</label>
+                        <label for="filters-size4"><input id="filters-size4" type="checkbox" value="size4"> 4.25" x 5.5"</label>
+                        <label for="filters-size5"><input id="filters-size5" type="checkbox" value="size5"> 4.25" x 6"</label>
+                        <label for="filters-size6"><input id="filters-size6" type="checkbox" value="size6"> 5" x 7"</label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">Style <img src="images/arrow-up.svg" width="" height="" alt=""></div>
+                    <div class="filter-content">
+                        <label for="filters-floral"><input id="filters-floral" type="checkbox" value="floral"> Floral</label>
+                        <label for="filters-vintage"><input id="filters-vintage" type="checkbox" value="Vintage"> Vintage</label>
+                        <label for="filters-timeless"><input id="filters-timeless" type="checkbox" value="Timeless"> Timeless</label>
+                        <label for="filters-modern"><input id="filters-modern" type="checkbox" value="Modern"> Modern</label>
+                        <label for="filters-romantic"><input id="filters-romantic" type="checkbox" value="Romantic"> Romantic</label>
+                        <label for="filters-elegant"><input id="filters-elegant" type="checkbox" value="Elegant"> Elegant</label>
+                    </div>
+                </div>
 
-                            <!-- Format -->
-                            <li>
-                                <div class="filter-box-area">
-                                    <form action="" class="">
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="portrait">
-                                            <label for="portrait">Portrait (205)</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="square">
-                                            <label for="square">Square (173)</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="landscape">
-                                            <label for="landscape">Landscape (205)</label>
-                                        </div>
-                                        
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Size -->
-                    <li>
-                        <a href="#" title="Test Title" class="">
-                            Size
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul>
-
-                            <!-- Size -->
-                            <li>
-                                <div class="filter-box-area">
-                                    <form action="" class="">
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size1">
-                                            <label for="size1">3" x 5"</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size2">
-                                            <label for="size2">3.5" x 5"</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size3">
-                                            <label for="size3">4" x 6"</label>
-                                        </div>
-
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size4">
-                                            <label for="size4">4.25" x 5.5"</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size5">
-                                            <label for="size5">4.25" x 6"</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="size6">
-                                            <label for="size6">5" x 7"</label>
-                                        </div>
-                                        
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-
-
-                    <!-- Style -->
-                    <li>
-                        <a href="#" title="Test Title" class="">
-                            Style
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <div class="filter-box-area">
-                                    <form action="" class="">
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="floral">
-                                            <label for="floral">Floral</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="vintage">
-                                            <label for="vintage">Vintage</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="timeless">
-                                            <label for="timeless">Timeless</label>
-                                        </div>
-
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="modern">
-                                            <label for="modern">Modern</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="romantic">
-                                            <label for="romantic">Romantic</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="elegant">
-                                            <label for="elegant">Elegant</label>
-                                        </div>
-                                        
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Finishing -->
-                    <li>
-                        <a href="#" title="Test Title" class="">
-                            Finishing
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <div class="filter-box-area">
-                                    <form action="" class="">
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="gold-foil">
-                                            <label for="gold-foil">Gold Foil</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="silver-foil">
-                                            <label for="silver-foil">Silver Foil</label>
-                                        </div>
-                                        <div class="cc_form-group">
-                                            <input type="checkbox" id="relief-varnish">
-                                            <label for="relief-varnish">Relief Varnish</label>
-                                        </div>
-                                        
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-        
-                    
-                </ul>
-            </div>
+                <div class="filter-section">
+                    <div class="filter-title">Style <img src="images/arrow-up.svg" width="" height="" alt=""></div>
+                    <div class="filter-content">
+                        <label for="filters-gold-foil"><input id="filters-gold-foil" type="checkbox" value="Gold Foil"> Gold Foil</label>
+                        <label for="filters-silver-foil"><input id="filters-silver-foil" type="checkbox" value="Silver Foil"> Silver Foil</label>
+                        <label for="filters-relief-varnish"><input id="filters-relief-varnish" type="checkbox" value="Relief Varnish"> Relief Varnish</label>
+                    </div>
+                </div>
+            </aside>
         </div>
             
         </div>
