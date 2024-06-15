@@ -19,40 +19,7 @@ $(document).ready(function() {
     var content = $(this).next('.filter-content');
     content.slideToggle(300);
 });
-    // Sidebar colspan
-
-// $(function(){
-//     var $ul   =   $('.sidebar-content > ul');
-    
-//     $ul.find('li a').click(function(e){
-//       var $li = $(this).parent();
-      
-//       if($li.find('ul').length > 0){
-//         e.preventDefault();
-        
-//         if($li.hasClass('selected')){
-//           $li.removeClass('selected').find('li').removeClass('selected');
-//           $li.find('ul').slideUp(400);
-//           $li.find('a i').removeClass('mdi-flip-v');
-//         }else{
-          
-//           if($li.parents('li.selected').length == 0){
-//             $ul.find('li').removeClass('selected');
-//             $ul.find('ul').slideUp(400);
-//             $ul.find('li a i').removeClass('mdi-flip-v');
-//           }
-
-          
-//           $li.addClass('selected');
-//           $li.find('>ul').slideDown(400);
-//           $li.find('>a>i').addClass('mdi-flip-v');
-//         }
-//       }
-//     });
- 
-    
-//   });
-
+   
 
 
 
@@ -86,3 +53,42 @@ $(document).ready(function() {
 });
 
 
+// Popup
+(function($) {
+  $.fn.openPopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.show();
+    elem.find('.popup-content').addClass(settings.anim+'In');
+  }
+  
+  $.fn.closePopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.find('.popup-content').removeClass(settings.anim+'In').addClass(settings.anim+'Out');
+    
+    setTimeout(function(){
+        elem.hide();
+        elem.find('.popup-content').removeClass(settings.anim+'Out')
+      }, 500);
+  }
+    
+}(jQuery));
+
+// Click functions for popup
+$('.open-popup').click(function(){
+  $('#'+$(this).data('id')).openPopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+$('.close-popup').click(function(){
+  $('#'+$(this).data('id')).closePopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
