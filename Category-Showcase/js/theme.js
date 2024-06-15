@@ -14,11 +14,6 @@ function product_cat(evt, cityName) {
 
 $(document).ready(function() {
 
-  $('.portfolio-controls').mousewheel(function(e, delta) {
-    this.scrollLeft -= (delta * 40);
-    e.preventDefault();
-  });
-
   $('.filter-title').click(function() {
     $(this).toggleClass('active');
     var content = $(this).next('.filter-content');
