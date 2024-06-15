@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Filter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="cc-product-portfolio">
+        <div class="cc_container">
+            <div class="cc_product-block">
+                <div class="cc_tab cc_flex">
+                    <div class="cc_tab_button">
+                        <button class="cc_tablinks active" onclick="product_cat(event, 'pre-wedding')">
+                            <h3 class="cc_button-title">
+                                Celebrations
+                            </h3>
+                            <hr>
+                            <p class="cc_button_p">
+                                Click or tap on this option to see all per-wedding invitation cards available in our platform
+                            </p>
+                        
+                        </button>
+                    </div>
+                    <div class="cc_tab_button">
+                        <button class="cc_tablinks" onclick="product_cat(event, 'post-wedding')">
+                            <h3 class="cc_button-title">
+                                Get-Together
+                            </h3>
+                            <hr>
+                            <p class="cc_button_p">
+                                Click or tap on this option to see all post-wedding invitation cards available in our platform
+                            </p>
+                        
+                        </button>
+                    </div>
+                </div>
+                
+                    <!-- Pre-Wedding -->
+                    <div id="pre-wedding" class="tabcontent" style="display: block;">
+                        <div class="portfolio-controls">
+                            <button class="filter-option" id="toggleSidebar"> <img class="filter-icon" src="images/filter.svg" alt=""> All</button>
+                            <button class="filter cc_p_active" data-filter=".engagement">Engagement Party</button>
+                            <button class="filter" data-filter=".bridal-shower">Bridal Shower</button>
+                            <button class="filter" data-filter=".bachelorette-party">Bachelorette Party</button>
+
+                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                        </div>
+
+
+                        <!-- Product -->
+                        <div class="portfolio-items" style="width:100%">
+                            <div class="item engagement">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item bridal-shower">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item bachelorette-party">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item bridal-shower">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item bachelorette-party">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                                <div class="item engagement">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item bridal-shower">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item bachelorette-party">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item bridal-shower">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item bachelorette-party">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div id="post-wedding" class="tabcontent">
+                        <div class="portfolio-controls">
+                            <button class="filter-option" id="toggleSidebar2"> <img class="filter-icon" src="images/filter.svg" alt=""> All</button>
+                            <button class="filter cc_p_active" data-filter=".wedding-reception">Wedding Reception</button>
+                            <button class="filter" data-filter=".post-wedding-brunch">Post-Wedding Brunch</button>
+                        </div>
+
+
+                        <!-- Product -->
+                        <div class="portfolio-items" style="width:100%">
+                            <div class="item wedding-reception">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item post-wedding-brunch">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item wedding-reception">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item post-wedding-brunch">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item wedding-reception">
+                                <div class="product-box">
+                                    <a href="#" title="">
+                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                    </a>
+                                </div>
+                            </div>
+                                <div class="item post-wedding-brunch">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item wedding-reception">
+                                    <div class="product-box">
+                                        <a href="#" title="">
+                                            <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+              </div>
+        
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="filter-inner">
+                <span class="sidebar-close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="sidebar-title">
+                Filters
+            </div>
+            <div class="sidebar-content">
+                <ul>
+                    <!-- 1st Group Li -->
+                    <li class="selected">
+                        <a href="#" title="Test Title" class="">
+                            Format
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul style="display: block;">
+
+                            <!-- Format -->
+                            <li>
+                                <div class="filter-box-area">
+                                    <form action="" class="">
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="portrait">
+                                            <label for="portrait">Portrait (205)</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="square">
+                                            <label for="square">Square (173)</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="landscape">
+                                            <label for="landscape">Landscape (205)</label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Size -->
+                    <li>
+                        <a href="#" title="Test Title" class="">
+                            Size
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul>
+
+                            <!-- Size -->
+                            <li>
+                                <div class="filter-box-area">
+                                    <form action="" class="">
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size1">
+                                            <label for="size1">3" x 5"</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size2">
+                                            <label for="size2">3.5" x 5"</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size3">
+                                            <label for="size3">4" x 6"</label>
+                                        </div>
+
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size4">
+                                            <label for="size4">4.25" x 5.5"</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size5">
+                                            <label for="size5">4.25" x 6"</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="size6">
+                                            <label for="size6">5" x 7"</label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Style -->
+                    <li>
+                        <a href="#" title="Test Title" class="">
+                            Style
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <div class="filter-box-area">
+                                    <form action="" class="">
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="floral">
+                                            <label for="floral">Floral</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="vintage">
+                                            <label for="vintage">Vintage</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="timeless">
+                                            <label for="timeless">Timeless</label>
+                                        </div>
+
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="modern">
+                                            <label for="modern">Modern</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="romantic">
+                                            <label for="romantic">Romantic</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="elegant">
+                                            <label for="elegant">Elegant</label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Finishing -->
+                    <li>
+                        <a href="#" title="Test Title" class="">
+                            Finishing
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <div class="filter-box-area">
+                                    <form action="" class="">
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="gold-foil">
+                                            <label for="gold-foil">Gold Foil</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="silver-foil">
+                                            <label for="silver-foil">Silver Foil</label>
+                                        </div>
+                                        <div class="cc_form-group">
+                                            <input type="checkbox" id="relief-varnish">
+                                            <label for="relief-varnish">Relief Varnish</label>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    
+                </ul>
+            </div>
+        </div>
+            
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
