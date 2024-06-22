@@ -13,7 +13,7 @@ function product_cat(evt, cityName) {
   }
 
 // Popup Model
-  var modal = document.getElementById('myModal');
+var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
 var span = document.getElementsByClassName('close')[0];
 
@@ -30,6 +30,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
 
 $(document).ready(function() {
 
@@ -69,6 +70,29 @@ $(document).ready(function() {
     $('.sidebar-close').click(function() {
         $('#sidebar').toggleClass('show');
     });
+
+
+
+
+
+
+
+    // Sidebar Product Filter
+    $(".custom_filter :checkbox").click(function(){
+       	$(".portfolio-items .item").hide();
+       	$(".custom_filter :checkbox:checked").each(function() 
+       	{
+           $("." + $(this).val()).fadeIn();
+		});
+       
+        if($('.custom_filter :checkbox').filter(':checked').length < 1) 
+        {
+        	$(".custom_filter .item").fadeIn();
+        	
+        }
+        
+    });
+
 });
 
 
