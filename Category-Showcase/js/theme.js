@@ -12,6 +12,25 @@ function product_cat(evt, cityName) {
     evt.currentTarget.className += " active";
   }
 
+// Popup Model
+  var modal = document.getElementById('myModal');
+var btn = document.getElementById('myBtn');
+var span = document.getElementsByClassName('close')[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 $(document).ready(function() {
 
   $('.filter-title').click(function() {
@@ -53,42 +72,3 @@ $(document).ready(function() {
 });
 
 
-// Popup
-(function($) {
-  $.fn.openPopup = function( settings ) {
-    var elem = $(this);
-    // Establish our default settings
-    var settings = $.extend({
-      anim: 'fade'
-    }, settings);
-    elem.show();
-    elem.find('.popup-content').addClass(settings.anim+'In');
-  }
-  
-  $.fn.closePopup = function( settings ) {
-    var elem = $(this);
-    // Establish our default settings
-    var settings = $.extend({
-      anim: 'fade'
-    }, settings);
-    elem.find('.popup-content').removeClass(settings.anim+'In').addClass(settings.anim+'Out');
-    
-    setTimeout(function(){
-        elem.hide();
-        elem.find('.popup-content').removeClass(settings.anim+'Out')
-      }, 500);
-  }
-    
-}(jQuery));
-
-// Click functions for popup
-$('.open-popup').click(function(){
-  $('#'+$(this).data('id')).openPopup({
-    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
-  });
-});
-$('.close-popup').click(function(){
-  $('#'+$(this).data('id')).closePopup({
-    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
-  });
-});
