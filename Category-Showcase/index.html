@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Filter</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="cc-product-portfolio">
@@ -18,7 +23,7 @@
                     <div class="cc_tab_button">
                         <button class="cc_tablinks active" onclick="product_cat(event, 'pre-wedding')">
                             <h3 class="cc_button-title">
-                                Celebrations
+                                Pre-Wedding Celebrations
                             </h3>
                             <hr>
                             <p class="cc_button_p">
@@ -30,7 +35,7 @@
                     <div class="cc_tab_button">
                         <button class="cc_tablinks" onclick="product_cat(event, 'post-wedding')">
                             <h3 class="cc_button-title">
-                                Get-Together
+                                Post-Wedding Celebrations
                             </h3>
                             <hr>
                             <p class="cc_button_p">
@@ -44,26 +49,37 @@
                     <!-- Category One -->
                     <!-- Pre-Wedding -->
                     <div id="pre-wedding" class="tabcontent" style="display: block;">
-                        <div class="portfolio-controls">
-                            <button class="filter-option" id="toggleSidebar"> <img class="filter-icon" src="images/filter.svg" alt=""> All</button>
-                            <button class="filter cc_p_active" data-filter=".engagement">Engagement Party</button>
-                            <button class="filter" data-filter=".bridal-shower">Bridal Shower</button>
-                            <button class="filter" data-filter=".bachelorette-party">Bachelorette Party</button>
+                        <div class="portfolio-controls owl-carousel owl-theme" id="cat-1">
+                            <button class="item filter-option" id="toggleSidebar"> <img class="filter-icon" src="images/filter.svg" alt=""> All Filters</button>
+                            <button class="item filter cc_p_active" data-filter=".engagement">Engagement Party</button>
+                            <button class="item filter" data-filter=".bridal-shower">Bridal Shower</button>
+                            <button class="item filter" data-filter=".bachelorette-party">Bachelorette Party</button>
 
-                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
-                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
-                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
-                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
-                            <button class="filter" data-filter=".bachelor-party">Bachelor Party</button>
-                            <button class="filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                            <button class="item filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="item filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                            <button class="item filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="item filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
+                            <button class="item filter" data-filter=".bachelor-party">Bachelor Party</button>
+                            <button class="item filter" data-filter=".rehearsal-dinner">Rehearsal Dinner</button>
                         </div>
 
 
                         <!-- Product -->
                         <div id="portfolio-items" class="portfolio-items" style="width:100%">
-                            <div class="item engagement filter_portrait filter_size1 filter_floral filter_gold_foil">
+                            <div class="items engagement filter_portrait filter_size1 filter_floral filter_gold_foil">
+                                <div class="product-box custom-productBox">
+                                    <a href="#" title="" class="btn open-popup">
+                                        + <br>
+                                        Create a blank <br>
+                                        wedding Invitation
+                                    </a>
+                                </div>
+
+                               
+                            </div>
+                            <div class="items engagement filter_portrait filter_size1 filter_floral filter_gold_foil">
                                 <div class="product-box">
-                                    <a href="#" title="" class="btn open-popup" data-id="popup_default" id="myBtn">
+                                    <a href="#" title="" class="btn open-popup" data-id="popup_default" id="myBtn" data-itro="p1">
                                         <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                     </a>
                                 </div>
@@ -154,63 +170,63 @@
 
                                
                             </div>
-                            <div class="item bridal-shower filter_square filter_size2 filter_vintage filter_silver_foil">
+                            <div class="items bridal-shower filter_square filter_size2 filter_vintage filter_silver_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item bachelorette-party filter_landscape filter_size3 filter_timeless filter_relief_varnish">
+                            <div class="items bachelorette-party filter_landscape filter_size3 filter_timeless filter_relief_varnish">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item bridal-shower filter_portrait filter_size4 filter_modern filter_gold_foil">
+                            <div class="items bridal-shower filter_portrait filter_size4 filter_modern filter_gold_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item bachelorette-party filter_square filter_size5 filter_romantic filter_silver_foil">
+                            <div class="items bachelorette-party filter_square filter_size5 filter_romantic filter_silver_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item engagement filter_landscape filter_size6 filter_elegant filter_relief_varnish">
+                            <div class="items engagement filter_landscape filter_size6 filter_elegant filter_relief_varnish">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item bridal-shower filter_portrait filter_size1 filter_floral filter_gold_foil">
+                            <div class="items bridal-shower filter_portrait filter_size1 filter_floral filter_gold_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item bachelorette-party filter_square filter_size2 filter_vintage filter_silver_foil">
+                            <div class="items bachelorette-party filter_square filter_size2 filter_vintage filter_silver_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item bridal-shower filter_landscape filter_size3 filter_timeless filter_relief_varnish">
+                            <div class="items bridal-shower filter_landscape filter_size3 filter_timeless filter_relief_varnish">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item bachelorette-party filter_portrait filter_size4 filter_modern filter_gold_foil">
+                            <div class="items bachelorette-party filter_portrait filter_size4 filter_modern filter_gold_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
@@ -228,165 +244,83 @@
 
                     <!-- Category Two -->
                     <div id="post-wedding" class="tabcontent">
-                        <div class="portfolio-controls">
-                            <button class="filter-option" id="toggleSidebar2"> <img class="filter-icon" src="images/filter.svg" alt=""> All</button>
-                            <button class="filter cc_p_active" data-filter=".wedding-reception">Wedding Reception</button>
-                            <button class="filter" data-filter=".post-wedding-brunch">Post-Wedding Brunch</button>
+                        <div class="portfolio-controls owl-carousel owl-theme" id="cat-2">
+                            <button class="item filter-option" id="toggleSidebar2"> <img class="filter-icon" src="images/filter.svg" alt=""> All Filters</button>
+                            <button class="item filter cc_p_active" data-filter=".wedding-reception">Wedding Reception</button>
+                            <button class="item filter" data-filter=".post-wedding-brunch">Post-Wedding Brunch</button>
                         </div>
 
 
                         <!-- Product -->
                         <div class="portfolio-items" style="width:100%">
-                            <div class="item wedding-reception filter_portrait filter_size1 filter_floral filter_gold_foil">
-                                <div class="product-box">
-                                    <a href="#" title="" class="btn open-popup" data-id="popup_default" id="myBtn">
-                                        <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
+                            <div class="items wedding-reception post-wedding-brunch filter_portrait filter_size1 filter_floral filter_gold_foil">
+                                <div class="product-box custom-productBox">
+                                    <a href="#" title="" class="btn open-popup">
+                                        + <br>
+                                        Create a blank <br>
+                                        wedding Invitation
                                     </a>
                                 </div>
-
-                                <!-- Popup -->
-                                <div id="myModal" class="modal">
-                                    <div class="modal-content popup-content">
-                                      <span class="close">&times;</span>
-                                        
-                                        <div class="popup-inner-box">
-                                            <div class="popup_product_img">
-                                                <a href="#" title="">
-                                                    <img class="img-full" src="images/popup-product-show.png" width="" height="" alt="">
-                                                </a>
-                                            </div>
-
-                                            <div class="product-customize">
-                                                <h2>Purple Pink Floral Happy Birthday Instagram Story</h2>
-
-                                                <div class="card-size">Template Size : 5”x5”</div>
-                                                <div class="template-customize-btn">
-                                                    <div class="customize-btn">
-                                                        <a href="#" title="">Customize this template</a>
-                                                    </div>
-                                                    <div class="wish-list-btn">
-                                                        <button type="button" title=""><i class="fa-regular fa-heart"></i></button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="customize-notes">
-                                                    <ul>
-                                                        <li>
-                                                            100% customizable to your needs
-                                                        </li>
-                                                        <li>
-                                                            Eid and download while on the move
-                                                        </li>
-                                                        <li>
-                                                            Easily share and publish them anywhere
-                                                        </li>
-                                                        <li>
-                                                            Collaborate in real time
-                                                        </li>
-                                                        <li>
-                                                            Access a vast library of images, icons, and graphics
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="related-product">
-                                            <div class="related-product-section-title">
-                                                More like this
-                                            </div>
-                                            <div class="related-product-list">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#" title="">
-                                                            <img class="img-full" src="images/p-1.jpg" width="" height="" alt="">
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" title="">
-                                                            <img class="img-full" src="images/p-1.jpg" width="" height="" alt="">
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" title="">
-                                                            <img class="img-full" src="images/p-1.jpg" width="" height="" alt="">
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" title="">
-                                                            <img class="img-full" src="images/p-1.jpg" width="" height="" alt="">
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" title="">
-                                                            <img class="img-full" src="images/p-1.jpg" width="" height="" alt="">
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
 
                                
                             </div>
-                            <div class="item post-wedding-brunch filter_square filter_size2 filter_vintage filter_silver_foil">
+                            <div class="items post-wedding-brunch filter_square filter_size2 filter_vintage filter_silver_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item wedding-reception filter_landscape filter_size3 filter_timeless filter_relief_varnish">
+                            <div class="items wedding-reception filter_landscape filter_size3 filter_timeless filter_relief_varnish">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item post-wedding-brunch filter_portrait filter_size4 filter_modern filter_gold_foil">
+                            <div class="items post-wedding-brunch filter_portrait filter_size4 filter_modern filter_gold_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item wedding-reception filter_square filter_size5 filter_romantic filter_silver_foil">
+                            <div class="items wedding-reception filter_square filter_size5 filter_romantic filter_silver_foil">
                                 <div class="product-box">
                                     <a href="#" title="">
                                         <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                     </a>
                                 </div>
                             </div>
-                            <div class="item post-wedding-brunch filter_landscape filter_size6 filter_elegant filter_relief_varnish">
+                            <div class="items post-wedding-brunch filter_landscape filter_size6 filter_elegant filter_relief_varnish">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item wedding-reception filter_portrait filter_size1 filter_floral filter_gold_foil">
+                            <div class="items wedding-reception filter_portrait filter_size1 filter_floral filter_gold_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item post-wedding-brunch filter_square filter_size2 filter_vintage filter_silver_foil">
+                            <div class="items post-wedding-brunch filter_square filter_size2 filter_vintage filter_silver_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item wedding-reception filter_landscape filter_size3 filter_timeless filter_relief_varnish">
+                            <div class="items wedding-reception filter_landscape filter_size3 filter_timeless filter_relief_varnish">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-1.jpg" alt="" width="1200" height="1695">
                                         </a>
                                     </div>
                             </div>
-                            <div class="item post-wedding-brunch filter_portrait filter_size4 filter_modern filter_gold_foil">
+                            <div class="items post-wedding-brunch filter_portrait filter_size4 filter_modern filter_gold_foil">
                                     <div class="product-box">
                                         <a href="#" title="">
                                             <img class="img-full" src="images/img-2.jpg" alt="" width="1200" height="1703">
@@ -456,6 +390,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/theme.js"></script>
 </body>
 </html>

@@ -49,10 +49,10 @@ $(document).ready(function() {
         var filterValue = $(this).attr('data-filter');
 
         if (filterValue === '*') {
-            $('.item').show('5000');
+            $('.items').show('5000');
         } else {
-            $('.item').not(filterValue).hide('10000');
-            $('.item').filter(filterValue).show('10000');
+            $('.items').not(filterValue).hide('10000');
+            $('.items').filter(filterValue).show('10000');
         }
 
         $('.filter').removeClass('cc_p_active');
@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     // Sidebar Product Filter
     $(".custom_filter :checkbox").click(function(){
-       	$(".portfolio-items .item").hide();
+       	$(".portfolio-items .items").hide();
        	$(".custom_filter :checkbox:checked").each(function() 
        	{
            $("." + $(this).val()).fadeIn();
@@ -87,11 +87,31 @@ $(document).ready(function() {
        
         if($('.custom_filter :checkbox').filter(':checked').length < 1) 
         {
-        	$(".custom_filter .item").fadeIn();
+        	$(".custom_filter .items").fadeIn();
         	
         }
         
     });
+
+
+
+$('#cat-1').owlCarousel({
+      margin:10,
+      dots:false,
+      nav:true,
+      loop: false,
+      autoWidth: true,
+      items:99,
+  });
+
+  $('#cat-2').owlCarousel({
+    margin:10,
+    dots:false,
+    nav:true,
+    loop: false,
+    autoWidth: true,
+    items:99,
+})
 
 });
 
